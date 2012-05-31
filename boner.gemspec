@@ -19,4 +19,9 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "rb-inotify"
   gem.add_development_dependency "sass"
   gem.add_development_dependency "therubyracer"
+  gem.add_development_dependency "coffee-filter"
+
+  gem.add_dependency "underscore-source"
+  gem.add_dependency "backbone-source"
+  gem.add_dependency "jquery-source"
 end

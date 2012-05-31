@@ -1,4 +1,6 @@
-#= require ../backbone
+#= require jquery
+#= require underscore
+#= require backbone
 
 namespace "Boner.Views", (Views) ->
   class Views.Menu extends Backbone.View
