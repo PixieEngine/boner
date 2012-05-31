@@ -1,10 +1,10 @@
-require "cornerstone/version"
+require "boner/version"
 
 # Sneaky require for Rails engine environment
 if defined? ::Rails::Engine
-  require "cornerstone/rails"
+  require "boner/rails"
 elsif defined? ::Sprockets
-  require "cornerstone/sprockets"
+  require "boner/sprockets"
 end
 
 module Boner
