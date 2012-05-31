@@ -1,4 +1,4 @@
-#= require /vendor/namespace
+#= require ../backbone
 
 namespace "Boner.Views", (Views) ->
   class Views.Menu extends Backbone.View
@@ -9,13 +9,20 @@ namespace "Boner.Views", (Views) ->
       'click .rename': 'rename'
       'click .delete': 'delete'
 
-    initialize: (options) ->
-      @settings = options.settings
+    #initialize: (options) ->
+    #  @settings = options.settings
 
     contextMenu: (e) =>
       e.preventDefault()
       e.stopPropagation()
 
+    delete: ->
+      ;
+
+    rename: ->
+      ;
+
+    ###
     delete: (e) =>
       if @settings.get('confirmDeletes')
         if confirm "Are you sure you want to delete '#{@model.name()}'?"
@@ -33,6 +40,7 @@ namespace "Boner.Views", (Views) ->
           path: "#{dirs.join('/')}/#{newName}"
 
       @$el.hide()
+    ###
 
     render: =>
       @$el.html @template()
