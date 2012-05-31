@@ -4,5 +4,7 @@ set :images_dir, 'images'
 
 set :build_dir, 'lib/assets'
 
+require 'coffee-filter'
+
 configure :build do
 end
