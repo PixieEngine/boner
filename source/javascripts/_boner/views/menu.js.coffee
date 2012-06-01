@@ -2,58 +2,43 @@
 #= require underscore
 #= require backbone
 
+$(document).on 'click', ->
+  $('.context_menu').remove()
+
 namespace "Boner.Views", (Views) ->
   class Views.Menu extends Backbone.View
     className: 'context_menu'
 
     events:
-      'contextmenu': 'contextMenu'
-      'click .rename': 'rename'
-      'click .delete': 'delete'
+      'click li': 'execute'
 
-    #initialize: (options) ->
-    #  @settings = options.settings
+    initialize: (options) ->
+      @el = $(@el)
 
-    contextMenu: (e) =>
-      e.preventDefault()
-      e.stopPropagation()
+      @menuItems = options.items
 
-    delete: ->
-      ;
+      @event = options.event
 
-    rename: ->
-      ;
+    execute: (e) =>
+      name = $(e.currentTarget).text()
 
-    ###
-    delete: (e) =>
-      if @settings.get('confirmDeletes')
-        if confirm "Are you sure you want to delete '#{@model.name()}'?"
-          @model.destroy()
-      else
-        @model.destroy()
-
-      @$el.hide()
-
-    rename: (e) =>
-      if newName = prompt("New Name", @model.name())
-        [dirs..., fileName] = @model.get('path').split('/')
-
-        @model.set
-          path: "#{dirs.join('/')}/#{newName}"
-
-      @$el.hide()
-    ###
+      @menuItems[name]()
 
     render: =>
-      @$el.html @template()
+      ul = $ "<ul></ul>"
+
+      for name, fn of @menuItems
+        li = $ "<li>"
+          class: name
+          text: name
+
+        hr = $ "<hr>"
+
+        ul.append li, hr
+
+      @el.html ul
+      @el.css
+        top: @event.pageY
+        left: @event.pageX
 
       return @
-
-    template: ->
-      """
-        <ul>
-          <li class='rename'>Rename</li>
-          <hr/>
-          <li class='delete'>Delete</li>
-        </ul>
-      """

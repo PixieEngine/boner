@@ -1,6 +1,17 @@
 %h1 Context Menu
 
 :coffeescript
-  view = new Boner.Views.Menu
+  $('html').on 'contextmenu', (e) ->
+    $('.context_menu').remove()
 
-  $('body').append(view.render().el)
+    e.preventDefault()
+
+    view = new Boner.Views.Menu
+      event: e
+      items:
+        rename: ->
+          alert 'renaming'
+        delete: ->
+          alert 'deleting'
+
+    $('html').append(view.render().el)
