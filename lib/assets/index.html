@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+    <link type="text/css" rel="stylesheet" media="screen" href="/stylesheets/boner.css" />
+    <script type="text/javascript" src="/javascripts/boner.js"></script>
+  </head>
+  <body>
+    <h1>Context Menu</h1>
+<script type='text/javascript'>
+  //<![CDATA[
+    (function() {
+
+  $('html').on('contextmenu', function(e) {
+    var view;
+    $('.context_menu').remove();
+    e.preventDefault();
+    view = new Boner.Views.Menu({
+      event: e,
+      items: {
+        rename: function() {
+          return alert('renaming');
+        },
+        "delete": function() {
+          return alert('deleting');
+        }
+      }
+    });
+    return $('html').append(view.render().el);
+  });
+
+}).call(this);
+
+  //]]>
+</script>
+  </body>
+</html>
