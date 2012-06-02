@@ -1,7 +1,3 @@
-#= require jquery
-#= require underscore
-#= require backbone
-
 $(document).on 'click', ->
   $('.context_menu').remove()
 
