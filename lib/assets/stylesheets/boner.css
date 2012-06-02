@@ -14,7 +14,7 @@
   font-weight: 500;
   position: absolute;
   width: 100px; }
-  /* line 17, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 17, ../../../.rvm/gems/ruby-1.9.2-p180@rails3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   .context_menu html, .context_menu body, .context_menu div, .context_menu span, .context_menu applet, .context_menu object, .context_menu iframe,
   .context_menu h1, .context_menu h2, .context_menu h3, .context_menu h4, .context_menu h5, .context_menu h6, .context_menu p, .context_menu blockquote, .context_menu pre,
   .context_menu a, .context_menu abbr, .context_menu acronym, .context_menu address, .context_menu big, .context_menu cite, .context_menu code,
@@ -34,32 +34,32 @@
     font-size: 100%;
     font: inherit;
     vertical-align: baseline; }
-  /* line 20, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 20, ../../../.rvm/gems/ruby-1.9.2-p180@rails3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   .context_menu body {
     line-height: 1; }
-  /* line 22, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 22, ../../../.rvm/gems/ruby-1.9.2-p180@rails3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   .context_menu ol, .context_menu ul {
     list-style: none; }
-  /* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 24, ../../../.rvm/gems/ruby-1.9.2-p180@rails3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   .context_menu table {
     border-collapse: collapse;
     border-spacing: 0; }
-  /* line 26, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 26, ../../../.rvm/gems/ruby-1.9.2-p180@rails3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   .context_menu caption, .context_menu th, .context_menu td {
     text-align: left;
     font-weight: normal;
     vertical-align: middle; }
-  /* line 28, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 28, ../../../.rvm/gems/ruby-1.9.2-p180@rails3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   .context_menu q, .context_menu blockquote {
     quotes: none; }
-    /* line 101, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+    /* line 101, ../../../.rvm/gems/ruby-1.9.2-p180@rails3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
     .context_menu q:before, .context_menu q:after, .context_menu blockquote:before, .context_menu blockquote:after {
       content: "";
       content: none; }
-  /* line 30, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 30, ../../../.rvm/gems/ruby-1.9.2-p180@rails3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   .context_menu a img {
     border: none; }
-  /* line 114, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 114, ../../../.rvm/gems/ruby-1.9.2-p180@rails3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   .context_menu article, .context_menu aside, .context_menu details, .context_menu figcaption, .context_menu figure, .context_menu footer, .context_menu header, .context_menu hgroup, .context_menu menu, .context_menu nav, .context_menu section, .context_menu summary {
     display: block; }
   /* line 17, boner.css.sass */
